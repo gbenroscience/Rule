@@ -571,7 +571,7 @@ int rulerScreenLen = isVert ? screenHeight - Config.START_PADDING : screenWidth 
 
             int pixelSize = (int) autoGetLength(++ctr) + Config.START_PADDING + Config.START_MARGIN;
 
-            String label = String.valueOf(ctr);
+            String label = String.valueOf(ctr/10);
             if (ctr == 0) {
                 var tick = new Tick(Tick.TICK_AVG, pixelSize, label);
                 ticks.add(tick);
